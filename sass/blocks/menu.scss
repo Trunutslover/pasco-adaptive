@@ -1,0 +1,153 @@
+.menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+.menu--hidden {
+  display: none;
+}
+
+.menu__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #303f9f;
+}
+
+.menu__item--active {
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4081;
+  }
+}
+
+.menu__link {
+  padding: 20px 0;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    color: darken(#ffffff, 30%);
+  }
+
+  &:active {
+    color: darken(#ffffff, 50%);
+  }
+}
+
+.menu__show-sub {
+  width: 15px;
+  height: 100%;
+  min-height: 59px;
+  margin-left: 10px;
+  position: relative;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: #ff4081;
+  }
+
+  &:hover > .menu__show-sub-icon {
+    fill: darken(#ffffff, 30%);
+  }
+
+  &:hover + .menu__sub-menu,
+  &:focus + .menu__sub-menu {
+    display: block;
+  }
+}
+
+.menu__show-sub-icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: -5px;
+  fill: #ffffff;
+}
+
+.menu__sub-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style-type: none;
+
+  &:hover {
+    display: block;
+  }
+}
+
+.menu__sub-item {
+  background-color: lighten(#303f9f, 10%);
+  border-top: 1px solid #303f9f;
+}
+
+.menu__sub-link {
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    color: darken(#ffffff, 30%);
+  }
+
+  &:active {
+    color: darken(#ffffff, 50%);
+  }
+}
+
+@media (min-width: 1170px) {
+  .menu {
+    width: auto;
+    flex-direction: row;
+  }
+
+  .menu__item {
+    margin-right: 28px;
+    border: none;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .menu__sub-menu {
+    width: auto;
+    position: absolute;
+    top: 100%;
+  }
+
+  .menu__sub-item {
+    width: auto;
+    padding: 10px 20px;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}

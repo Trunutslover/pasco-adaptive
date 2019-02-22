@@ -1,0 +1,42 @@
+.language {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.language__select {
+  margin-left: 5px;
+  padding-right: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: url("../img/cheveron-down.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+
+  &:hover {
+    color: darken(#ffffff, 30%);
+    cursor: pointer;
+  }
+}
+
+.language__option {
+  background-color: #303f9f;
+}
+
+.language__icon {
+  fill: #ffffff;
+}
+
+@media (min-width: 1172px) {
+  .language__option {
+    background-color: #191919;
+  }
+}
