@@ -22,13 +22,7 @@ body {
   padding: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+
 
 @import "blocks/language.scss";
 @import "blocks/login.scss";
@@ -39,3 +33,25 @@ body {
 @import "blocks/search-like-cart.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/title.scss";
+
+@import "blocks/card.scss";
+@import "blocks/main.scss";
+@import "blocks/aside.scss";
+@import "blocks/page.scss";
+
+@import "blocks/pages.scss";
+@import "blocks/newsletter.scss";
+@import "blocks/footer-heading.scss";
+@import "blocks/footer-categories.scss";
+@import "blocks/footer-tags.scss";
+@import "blocks/footer-flickr.scss";
+@import "blocks/footer-bottom.scss";
+@import "blocks/footer.scss";
+
+.visually-hidden {
+   position: absolute;
+   clip: rect(0 0 0 0);
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+ }

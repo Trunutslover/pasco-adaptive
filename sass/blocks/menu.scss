@@ -1,5 +1,6 @@
 .menu {
   width: 100%;
+  max-height: 700px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,6 +12,12 @@
   text-transform: uppercase;
   list-style-type: none;
   color: #ffffff;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  transition: max-height 0.5s;
 }
 
 .menu--hidden {
@@ -121,6 +128,16 @@
   &:active {
     color: darken(#ffffff, 50%);
   }
+}
+
+.menu--closed {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  transition: max-height 0.5s;
 }
 
 @media (min-width: 1170px) {

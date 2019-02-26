@@ -1,0 +1,132 @@
+.footer__pages {
+  display: none;
+}
+
+.footer__twitter-social-wrapper {
+  display: none;
+}
+
+.footer__newsletter {
+  display: none;
+}
+
+.footer__main-menu {
+  display: none;
+}
+
+.footer__search {
+  display: none;
+}
+
+.footer__language {
+  display: none;
+}
+
+@media (min-width: 1170px) {
+  .footer {
+
+  }
+
+  .footer__top {
+    background-color: #212121;
+  }
+
+  .footer__top-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__footer-heading {
+    display: none;
+  }
+
+  .footer__footer-categories {
+    display: none;
+  }
+
+  .footer__footer-tags {
+    display: none;
+  }
+
+  .footer__pages {
+    display: block;
+    width: 270px;
+  }
+
+  .footer__twitter-social-wrapper {
+    display: block;
+    width: 270px;
+    background-color: #5c5c5b;
+  }
+
+  .footer__newsletter {
+    display: block;
+    width: 270px;
+  }
+
+  .footer__menu {
+    background-color: #303030;
+  }
+
+  .footer__menu-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    min-height: 80px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__footer-bottom {
+    display: none;
+  }
+
+  .footer__main-menu {
+    display: flex;
+  }
+
+  .footer__search {
+    display: block;
+    width: 220px;
+    height: 35px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+
+    &:hover,
+    &:hover::placeholder {
+      color: darken(#ffffff, 30%);
+      border-color: darken(#ffffff, 30%);
+    }
+
+    &:focus,
+    &:focus::placeholder {
+      color: darken(#ffffff, 50%);
+      border-color: darken(#ffffff, 50%);
+    }
+  }
+
+  .footer__language {
+    display: block;
+  }
+}
