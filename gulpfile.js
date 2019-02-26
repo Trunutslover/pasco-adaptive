@@ -29,7 +29,8 @@ gulp.task("scripts-copy", function () {
 gulp.task("styles", function () {
     return gulp.src("sass/style.scss")
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest("build/css/"));
+        .pipe(gulp.dest("build/css/"))
+        .pipe(gulp.dest("css/"));
 });
 
 gulp.task("imagemin", function () {
