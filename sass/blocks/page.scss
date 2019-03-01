@@ -20,6 +20,25 @@
 
 @media (min-width: 1170px) {
   .page {
+
+  }
+
+  .page__sort {
+    border-bottom: 1px solid #dddddd;
+    background-color: #ffffff;
+  }
+
+  .page__sort-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .page__wrapper {
     padding-top: 31px;
     display: flex;
     justify-content: center;

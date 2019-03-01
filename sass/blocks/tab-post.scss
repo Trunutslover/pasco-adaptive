@@ -1,0 +1,140 @@
+.tab-post {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.tab-post__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #303f9f;
+  border-bottom: 1px solid #303f9f;
+}
+
+.tab-post__buttons-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.tab-post__recent,
+.tab-post__popular {
+  width: 50%;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #303f9f;
+  color: #303f9f;
+  background-color: #ffffff;
+
+  &:hover {
+    background-color: darken(#ffffff, 10%);
+    cursor: pointer;
+  }
+
+  &:active {
+    color: lighten(#303f9f, 30%);
+    background-color: darken(#ffffff, 30%);
+  }
+}
+
+.tab-post__button--active {
+  color: #ffffff;
+  background-color: #303f9f;
+
+  &:hover {
+    background-color: lighten(#303f9f, 10%);
+  }
+
+  &:active {
+    color: darken(#ffffff, 50%);
+    background-color: lighten(#303f9f, 30%);
+  }
+}
+
+.tab-post__recent {
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tab-post__popular {
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tab-post__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tab-post__item {
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dee5e9;
+
+  &:last-of-type {
+    border: none;
+  }
+
+  &:hover {
+    background-color: #ededed;
+  }
+}
+
+.tab-post__link {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+}
+
+.tab-post__image {
+  display: block;
+  margin-right: 10px;
+}
+
+.tab-post__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-post__date-comment {
+  width: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  align-items: baseline;
+  font-size: 12px;
+}
+
+.tab-post__icon {
+  margin-left: auto;
+  margin-right: 5px;
+
+}
+
+.tab-post__comments {
+  margin: 0;
+  font-size: 14px;
+}
+
+.tab-post__description {
+  margin: 0;
+  font-size: 16px;
+}

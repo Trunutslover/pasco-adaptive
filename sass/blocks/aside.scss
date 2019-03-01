@@ -1,5 +1,68 @@
 .aside {
   width: 270px;
-  min-height: 200px;
-  background-color: #5c5c5b;
+  padding-top: 20px;
+}
+
+.aside__form {
+  width: 100%;
+  position: relative;
+}
+
+.aside__search {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+  padding: 0 60px 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  background-color: #f5f5f5;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: darken(#f5f5f5, 10%);
+  }
+}
+
+.aside__submit {
+  width: 39px;
+  height: 39px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ff4081;
+
+  &:hover,
+  &:focus {
+    background-color: darken(#ff4081, 10%);
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: darken(#ff4081, 20%);
+  }
+}
+
+.aside__categories {
+  margin-bottom: 30px;
+}
+
+.aside__subscribe {
+  margin-bottom: 30px;
+}
+
+.aside__tab-post {
+  margin-bottom: 30px;
 }

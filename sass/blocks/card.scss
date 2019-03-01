@@ -46,12 +46,20 @@
   color: #ffffff;
 }
 
-.card__inspiration {
+.card__type {
   margin-right: auto;
+}
+
+.card__comments-icon {
+  margin-right: 5px;
 }
 
 .card__comments-number {
   margin-right: 15px;
+}
+
+.card__likes-icon {
+  margin-right: 5px;
 }
 
 .card__content {
@@ -61,6 +69,7 @@
   box-sizing: border-box;
   border-bottom: 1px solid #e0e0e0;
   background-color: transparent;
+  overflow: hidden;
 }
 
 .card__title {
@@ -153,7 +162,7 @@
     line-height: 16px;
   }
 
-  & .card__inspiration {
+  & .card__type {
     margin: 0;
   }
 
@@ -164,7 +173,6 @@
   & .card__content {
     padding: 5px 10px;
     height: 50%;
-    overflow: hidden;
   }
 
   & .card__title {
@@ -226,7 +234,7 @@
     line-height: 16px;
   }
 
-  & .card__inspiration {
+  & .card__type {
     margin: 0;
   }
 
@@ -237,7 +245,6 @@
   & .card__content {
     padding: 5px 10px;
     height: 65px;
-    overflow: hidden;
   }
 
   & .card__title {
@@ -297,7 +304,7 @@
     line-height: 16px;
   }
 
-  & .card__inspiration {
+  & .card__type {
     margin: 0;
   }
 
@@ -319,5 +326,85 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+  }
+}
+
+.card--first {
+  width: 820px;
+  height: 620px;
+
+  & .card__image {
+    width: 818px;
+    height: 420px;
+  }
+
+  & .card__author {
+    padding: 10px 20px;
+  }
+}
+
+.card--medium-wide {
+  width: 820px;
+  height: 165px;
+  flex-direction: row;
+
+  & .card__top {
+    width: 260px;
+  }
+
+  & .card__image {
+    width: 260px;
+    height: 163px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+
+  & .card__bottom {
+    width: 560px;
+  }
+
+  & .card__content {
+    height: 95px;
+    padding: 10px 20px;
+  }
+
+  & .card__author {
+    padding: 5px 20px;
+  }
+}
+
+.card--medium-tall {
+  width: 260px;
+  height: 420px;
+
+  & .card__image {
+    width: 258px;
+    height: 160px;
+  }
+
+  & .card__content {
+    height: 175px;
+  }
+
+  & .card__author {
+    padding: 10px 20px;
+  }
+}
+
+.card--big {
+  width: 400px;
+  height: 540px;
+
+  & .card__image {
+    width: 398px;
+    height: 300px;
+  }
+
+  & .card__content {
+    height: 160px;
+  }
+
+  & .card__author {
+    padding: 10px 20px;
   }
 }

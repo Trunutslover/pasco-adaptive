@@ -2,7 +2,7 @@
   width: 280px;
   min-height: 300px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -22,5 +22,12 @@
 @media (min-width: 1170px) {
   .main {
     width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main__card {
+
   }
 }
